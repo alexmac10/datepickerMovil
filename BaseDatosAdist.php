@@ -14,7 +14,7 @@ class BaseDatosAdist {
     }
 
     public function connectBD() {
-        $mysqli = new mysqli("localhost", "usertest_usr", "adist01", "adist_usertest");
+        $mysqli = new mysqli("localhost", "", "", "");
         if ($mysqli->connect_errno) {
             return 'Fallo al conectar a la base de datos :';
         } else {
